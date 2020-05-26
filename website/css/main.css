@@ -1,0 +1,169 @@
+@import url('https://fonts.googleapis.com/css?family=Abel');
+body {
+    height: 100%;
+    background-image: url("images/overlay.png"), url("images/background.jpeg");
+    background-repeat: repeat, no-repeat, no-repeat;
+    background-size: 100px 100px, cover, cover;
+    background-position: top left, center center, bottom center;
+    background-attachment: fixed, fixed, fixed;
+}
+
+@media screen and (min-width: 1100px) {
+    #left {
+        background-color: transparent;
+        height: 500px;
+        width: 380px;
+        margin-left: 10%;
+    }
+    
+    #right {
+        background-color: transparent;
+        margin-left: 47%;
+        margin-right: 12%;
+        margin-top: -39%;
+        line-height: 2;
+    }
+
+    h1 {
+        padding-left: 16%;
+        padding-bottom: 20%;
+    }
+
+    h2, h3 {
+        position: relative;
+        bottom: 80px;
+    }
+
+    #portrait {
+        padding-left: 23%;
+        padding-top: 9%;
+    }
+
+    #linkedIn, #facebook, #resume, #email, #spotify {
+        position: relative;
+        bottom: 160px;
+        left: 40px;
+    }
+    
+}
+
+@media screen and (max-width: 1099px) {
+    #left {
+        background-color: transparent;
+        height: auto;
+        width: 50%;
+        margin: auto;
+    }
+
+    #right{
+        background-color: transparent;
+        float: left;
+    }
+
+    h1,h2,h3{
+        text-align: center;
+        font-size: 3vw;
+        float: left;
+    }
+
+    #portrait {
+        width: 80%;
+        height: auto;
+    }
+
+    #linkedIn, #facebook, #resume, #email, #spotify{
+        position: relative;
+        bottom: 80px;
+    }
+}
+
+p {
+    color: white;
+    font-size: 20px;
+    text-align: justify;
+    font-family: "Abel";
+}
+
+@keyframes typing {
+    from {
+        width: 0
+    }
+    to {
+        width: 100%
+    }
+}
+
+@keyframes blink-caret {
+    from, to {
+        border-color: transparent
+    }
+}
+
+h1 {
+    font-family: "Lucida Console", monaco, "Bitstream Vera Sans Mono", monospace;
+    color: white;
+    overflow: hidden;
+    white-space: nowrap;
+    animation: typing 3.5s steps(30, end), blink-caret .5s step-end infinite;
+}
+
+h2, h3 {
+    font-size: smaller;
+    color: white;
+    font-family: "Lucida Console", monaco, "Bitstream Vera Sans Mono", monospace;
+    overflow: hidden;
+    white-space: nowrap;
+    animation-delay: 10s;
+    animation: typing 3.5s steps(30, end), blink-caret .5s step-end infinite;
+}
+
+h2 {
+    padding-left: 25%;
+}
+
+h3 {
+    padding-left: 11%;
+    padding-bottom: 30%;
+}
+
+#linkedIn, #facebook, #resume, #email, #spotify {
+    color: white;
+    padding: 10px;
+    font-size: 30px;
+    width: 30px;
+    text-align: center;
+    text-decoration: none;
+    margin: 5px 2px;
+    border-radius: 50%;
+}
+
+#linkedIn {
+    background: #007bb5;
+}
+
+#facebook {
+    background: #3B5998;
+}
+
+#resume, #email {
+    background: plum;
+}
+
+#spotify {
+    background: #1DB954;
+}
+
+.fa:hover {
+    opacity: 0.7;
+}
+
+.deanList, .bitcamp, .hackWCU, .webProgramPythJS {
+    text-decoration: none;
+    color: white;
+    font-style: italic;
+}
+
+.deanList:hover, .bitcamp:hover, .hackWCU:hover, .webProgramPythJS:hover {
+    color: plum;
+    font-style: normal;
+}
