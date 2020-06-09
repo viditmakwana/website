@@ -25,7 +25,7 @@ body {
     }
 
     h1 {
-        padding-left: 16%;
+        padding-left: 25%;
         padding-bottom: 20%;
     }
 
@@ -39,7 +39,7 @@ body {
         padding-top: 9%;
     }
 
-    #linkedIn, #facebook, #resume, #email, #spotify {
+    #linkedIn, #facebook, #resume, #email, #github {
         position: relative;
         bottom: 160px;
         left: 40px;
@@ -71,7 +71,7 @@ body {
         height: auto;
     }
 
-    #linkedIn, #facebook, #resume, #email, #spotify{
+    #linkedIn, #facebook, #resume, #email, #github{
         position: relative;
         bottom: 80px;
     }
@@ -126,7 +126,7 @@ h3 {
     padding-bottom: 30%;
 }
 
-#linkedIn, #facebook, #resume, #email, #spotify {
+#linkedIn, #facebook, #resume, #email, #github {
     color: white;
     padding: 10px;
     font-size: 30px;
@@ -149,8 +149,8 @@ h3 {
     background: plum;
 }
 
-#spotify {
-    background: #1DB954;
+#github {
+    background: plum;
 }
 
 .fa:hover {
